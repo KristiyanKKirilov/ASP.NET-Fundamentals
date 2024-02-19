@@ -1,0 +1,22 @@
+﻿@model int
+@{
+}
+<h1>Number</h1>
+
+<p>The number is @Model</p>
+
+<div>
+	@{
+		for (int count = 0; count < 3; count++)
+		{
+			<p>Count is: @count</p>
+		}
+
+		string[] nameArray = { "Mandy", "Peter" };
+
+		foreach (var name in nameArray)
+		{
+			<p>Your name is: @name</p>
+		}
+	}
+</div>
